@@ -1,0 +1,1 @@
+<span class="label label-info">{{$updated_at}}</span>

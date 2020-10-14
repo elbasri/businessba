@@ -1,0 +1,5 @@
+/* here you can put your own css to customize and override the theme */
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+*,h1,h2,h3,h4,h5,h6,body{font-family: 'Cairo', sans-serif;}
+.page-footer{background: #fff;padding: 20px 20px 20px 20px;font-size: 12px;height: auto}
+.page-footer .page-footer-inner{margin-bottom: 0px;float: none;text-align: center}

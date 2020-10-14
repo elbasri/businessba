@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+*,h1,h2,h3,h4,h5,h6,body
+{
+    font-family: 'Changa', sans-serif;
+
+}
+
+.page-footer
+{
+    margin: 10px 20px 0px 20px;
+    font-size: 12px;
+}
+.page-footer .page-footer-inner
+{
+    margin-bottom: 0px;
+    float: none;
+    text-align: center
+}
+
+.portlet>.portlet-title>.actions .btn-icon-only.btn-default.showall
+{
+    font-family: 'Changa', sans-serif;
+    color:#a0a0a0;
+    padding-top:4px;
+}
+
+.login .copyright a{
+    color: #cac9c9;
+}
+
+.forget{
+    background-color: #4272b9;
+    color: #fff;
+    border-color: #4272b9;
+}
+
+.forget:hover{
+    background-color: #305388;
+    color: #fff;
+    border-color: #305388;
+}
+
+.mt-element-step .step-line .active .mt-step-number ,.mt-element-step .step-line .active .mt-step-content, .mt-element-step .step-line .active .mt-step-title{
+    color : #3498db !important;
+    border-color: #3498db !important;
+}
+
+.mt-element-step .step-line .active .mt-step-title:after, .mt-element-step .step-line .active .mt-step-title:before{
+    background: #3498db !important;
+}

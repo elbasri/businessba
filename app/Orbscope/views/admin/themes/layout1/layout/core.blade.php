@@ -1,0 +1,5 @@
+@include(AdminHeader())
+@include(AdminMenu())
+@include(AdminMessages())
+@yield('content')
+@include(AdminFooter())

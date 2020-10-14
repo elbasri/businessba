@@ -1,0 +1,1 @@
+<a href="{{ url(AdminPath().'/payments/'.$id)}}" class="btn btn-success">{{trans('orbscope.show')}}</a>

@@ -1,0 +1,83 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4",
+        "barryvdh/laravel-dompdf": "^0.8.6",
+        "barryvdh/laravel-snappy": "^0.4.0",
+        "dompdf/dompdf": "~0.8.3",
+        "filp/whoops": "~2.0",
+        "h4cc/wkhtmltopdf-amd64": "0.12.4",
+        "intervention/image": "^2.4",
+        "jdavidbakr/mail-tracker": "~2.1",
+        "kdyby/wkhtmltopdf": "^0.1.0",
+        "laravel/framework": "5.7.*",
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.4.0",
+        "maatwebsite/excel": "~2.1.0",
+        "mcamara/laravel-localization": "^1.2",
+        "mpdf/mpdf": "~5.7.3",
+        "pusher/pusher-php-server": "^3.0",
+        "pyaesone17/active-state": "^1.1.1",
+        "spatie/laravel-permission": "^2.7",
+        "unisharp/laravel-ckeditor": "^4.6",
+        "uxweb/sweet-alert": "~1.4",
+        "webklex/laravel-imap": "1.0.2.8",
+        "wemersonjanuario/wkhtmltopdf-windows": "0.12.2.3",
+        "yajra/laravel-datatables-buttons": "3.*",
+        "yajra/laravel-datatables-html": "3.*",
+        "yajra/laravel-datatables-oracle": "8.*"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files":[
+            "app/Orbscope/Helpers/OrbscopeHelper.php",
+            "app/Orbscope/Helpers/AdminHelper.php",
+            "app/Orbscope/Helpers/ExcelHelper.php",
+            "app/Orbscope/Helpers/UploadHelper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall"
+
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

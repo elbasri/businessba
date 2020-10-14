@@ -1,0 +1,1 @@
+<a href="{{ url(AdminPath().'/payments/'.$id)}}">{{$invoice_number}}</a>

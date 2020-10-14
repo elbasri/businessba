@@ -1,0 +1,21 @@
+body {
+    font-size: .6rem !important
+}
+
+
+.table-bordered td, .table-bordered th,
+.table thead th {
+    border: 1px solid #000;
+}
+
+.red-color {
+    color: red !important;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+h5{
+    line-height: .8;
+}

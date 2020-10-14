@@ -1,0 +1,1 @@
+{{VarByLang($action,GetLanguage())}}
